@@ -1,0 +1,53 @@
+.range-filter {
+  .nav-tabs {
+    border: 0;
+    .nav-link {
+      border: 1px solid $gray-500;
+    }
+  }
+  &__topbar {
+    border: 2px solid $gray-500;
+  }
+  &__driver-img {
+    width: 30px;
+  }
+  &__title {
+    font-size: 13px;
+  }
+  &__section {
+    border: 1px solid $gray-500;
+    box-shadow: 0px 18px 29px -11px rgb(0 0 0 / 48%);
+    border-radius: 0px 10px 10px 10px;
+    &-location {
+      p {
+        padding: 15px 0px 0px 0px;
+      }
+    }
+    &-middle {
+      p {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+    &-right {
+      &-icon {
+        font-size: 20px;
+        color: $blue;
+        margin: 0px 0 0 10px;
+      }
+      &-button {
+        background-color: transparent;
+        width: 130px;
+        margin-top: 10px;
+        &-text {
+          font-size: 19px !important;
+          padding: 0px 0 0 0;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        text-align: center;
+      }
+    }
+  }
+}

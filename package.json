@@ -1,0 +1,36 @@
+{
+  "name": "gav",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "export": "next export",
+    "deploy": "npm run build && rm -rf /path/to/cache && npm run export"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "google-map-react": "^2.1.9",
+    "google-maps-react": "^2.0.6",
+    "moment": "^2.29.1",
+    "next": "10.0.8",
+    "next-auth": "^3.14.0",
+    "react": "17.0.1",
+    "react-bootstrap": "^1.5.1",
+    "react-dom": "17.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^4.2.0",
+    "react-redux": "^7.2.2",
+    "react-slick": "^0.28.1",
+    "react-star-ratings": "^2.3.0",
+    "react-toastify": "^7.0.3",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.8",
+    "slick-carousel": "^1.8.1",
+    "talkjs": "^0.14.3"
+  }
+}

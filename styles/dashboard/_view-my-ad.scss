@@ -1,0 +1,192 @@
+.view-my-ad-area {
+  img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .my-ad-nav-tab-link.active {
+    background: transparent;
+  }
+  .my-ad-nav-tab-link:first-child {
+    padding-top: 0;
+  }
+  .my-ad-nav-tab-link {
+    padding-bottom: 13px;
+
+    @media (max-width: 991px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: 575px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .img-container {
+      width: 80%;
+      img {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+    }
+  }
+  .view-my-ad-right {
+    .view-my-ad-right-t-para {
+      padding: 30px 20px;
+      background: $text-bg;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      color: $white;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+    }
+    .view-profile-container {
+      padding: 30px;
+      padding-bottom: 10px !important;
+      background-color: $text-bg1;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      @media (max-width: 575px) {
+        padding: 20px 15px;
+      }
+    }
+    .veiw-profile {
+      padding-bottom: 30px;
+      img {
+        height: 85px;
+        width: 85px !important;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+      .profile-name {
+        font-size: 30px;
+        font-weight: 400;
+        @media (max-width: 991px) {
+          font-size: 20px;
+        }
+      }
+      .profile-rating,
+      .star {
+        font-size: 20px;
+      }
+    }
+  }
+  .view-ad-btn {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 2px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: $btn-bg-color1;
+    color: $white;
+    @media (max-width: 991px) {
+      font-size: 20px;
+    }
+  }
+  .view-ad-description {
+    .view-ad-des-btn {
+      padding-left: 12px;
+      padding-right: 12px;
+      color: $btn-bg-color;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      background: transparent;
+      border: 1px solid $btn-bg-color;
+      font-size: 25px;
+      font-weight: 400;
+      @media (max-width: 767px) {
+          font-size: 15px;
+      }
+      &:hover {
+        background-color: $btn-bg-color;
+        color: $white;
+      }
+    }
+    .view-ad-btn-grp {
+      padding: 30px 0;
+    }
+  }
+  .charac-content {
+    margin-bottom: 25px;
+    .charac-upper-name {
+      color: $text-color7;
+      font-size: 22px;
+    }
+    .charac-bottom-name {
+      font-size: 22px;
+    }
+    .charac-icon {
+      font-size: 30px;
+    }
+  }
+  .additional-list {
+    font-size: 25px;
+    color: $text-color5;
+    padding-bottom: 35px;
+  }
+  .additional-icon {
+    color: $icon-color;
+    font-size: 35px;
+  }
+  .charac-header {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .driver-comment-section {
+    img {
+      height: 85px;
+      width: 85px !important;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border: 1px solid $black;
+      @media (max-width: 575px) {
+        height: 56px;
+      }
+    }
+    .filled-star {
+      color: $star-color;
+      font-size: 25px;
+    }
+    .driver-comment-author {
+      font-size: 20px;
+      span {
+        font-size: 16px;
+        color: $text-color4;
+      }
+    }
+    .driver-comment-details {
+      font-size: 20px;
+      font-style: italic;
+    }
+  }
+  .driver-comment-load-more-btn {
+    font-size: 30px;
+    color: $text-color7;
+    background: $white;
+  }
+}

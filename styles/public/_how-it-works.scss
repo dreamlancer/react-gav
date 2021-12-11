@@ -1,0 +1,13 @@
+.howitworks-area {
+  .howitworks-para {
+    p {
+      font-size: 30px;
+      font-weight: 700;
+      @media screen and (max-width: 576px) {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

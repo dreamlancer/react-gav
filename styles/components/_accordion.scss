@@ -1,0 +1,27 @@
+.accordion-area {
+  .btn-link {
+    font-size: 30px;
+    color: $title-color;
+    text-align: left;
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus {
+      text-decoration: none;
+      box-shadow: none;
+    }
+  }
+  .accordion-body {
+    font-size: 30px;
+    padding: 15px 10px;
+    border-radius: 20px;
+    border: 1px solid $primary-color;
+  }
+  .accordion-title,
+  .accordion-body,
+  .accordion-icon {
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+}

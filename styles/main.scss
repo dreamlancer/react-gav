@@ -1,0 +1,47 @@
+// Including bootstrap files
+@import "bootstrap/bootstrap";
+
+// Including variables and mixins files
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/reset";
+@import "partials/predefined";
+
+// Including Component sass files
+
+// Including Public sass files
+@import "components/button";
+@import "components/heading";
+@import "components/divider";
+@import "components/step-heading";
+@import "components/accordion";
+@import "components/input";
+@import "components/radio-btn";
+@import "components/dropdown";
+@import "components/photo";
+
+// Including Public sass files
+@import "public/banner";
+@import "public/login";
+@import "public/how-it-works";
+@import "public/suppiler";
+@import "public/driver";
+@import "public/why-gav";
+@import "snippets/range-filter";
+@import "snippets/single-choice";
+@import "snippets/single-vehicle";
+@import "snippets/primary-modal";
+@import "snippets/rating-avatar";
+@import "snippets/available-vehicles";
+
+// Including layouts sass files
+@import "layouts/public/footer";
+@import "layouts/dashboard/header";
+@import "layouts/dashboard/floating";
+@import "dashboard/my-vehicles";
+@import "dashboard/vehicles-card-area";
+@import "dashboard/view-my-ad";
+@import "dashboard/supplier";
+@import "dashboard/profile-area";
+@import "dashboard/my-panel-area";
+

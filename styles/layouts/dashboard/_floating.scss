@@ -1,0 +1,35 @@
+.floating-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    background-color: $primary-color4;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+    @media (max-width: 1820px) {
+        left: -150px;
+    }
+
+    .single-floating-item {
+        min-width: 315px;
+    }
+}
+
+.floating-wrapper-open {
+    width: 570px;
+    @media (max-width: 1820px) {
+        width: 700px;
+    }
+}
+
+.back-shed {
+    background-color: rgba(48, 49, 48, 0.42);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+}

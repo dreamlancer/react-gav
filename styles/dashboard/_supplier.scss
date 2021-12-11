@@ -1,0 +1,92 @@
+// Supplier Registration Form
+
+// .supplier-reg-area {
+.reg-step-btn {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    color: $black;
+    height: 114px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      height: 70px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+    @media (max-width: 380px) {
+      font-size: 10px;
+    }
+
+    &.reg-step-btn-active {
+        color: $primary-color;
+        .reg-step-header {
+            background-color: $primary-color;
+        }
+    }
+    &.reg-step-btn-done {
+        color: $icon-color;
+        .reg-step-header {
+            background-color: $icon-color;
+        }
+    }
+
+
+    &:first-child {
+        &::before {
+            width: 0;
+        }
+    }
+    &:last-child {
+        &::after {
+            width: 0;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 30px;
+        height: 2px;
+        width: 50%;
+        background-color: $black;
+        @media (max-width: 768px) {
+          top: 15px;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 30px;
+        height: 2px;
+        width: 50%;
+        background-color: $black;
+        @media (max-width: 768px) {
+          top: 15px;
+        }
+    }
+
+    .reg-step-header {
+        display: block;
+        height: 60px;
+        width: 60px;
+        border-radius: 40px;
+        background-color: $white;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0px 3px 8px rgb(45 45 45 / 50%);
+        @media (max-width: 768px) {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

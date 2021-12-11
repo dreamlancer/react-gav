@@ -1,0 +1,24 @@
+.upload-photo {
+  p {
+
+    @media (max-width: 1298px) {
+      font-size: 20px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 16px;
+    }
+    @media (max-width: 991px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.upload-photos-top {
+  margin-top: 220px;
+  @media (max-width: 1024px) {
+    margin-top: 120px;
+  }
+  @media (max-width: 991px) {
+    margin-top: 20px;
+  }
+}

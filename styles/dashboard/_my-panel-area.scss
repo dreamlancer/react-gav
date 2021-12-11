@@ -1,0 +1,107 @@
+.my-panel-area{ 
+    position: sticky;
+    top: 10%;
+    &__header{
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        P{
+            font-size: 20px;
+            color: $white;
+            margin-right: 30px;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+    }
+    &__icon{
+        color: $white;
+        font-size: 30px;
+    }
+    &__btn{
+        background-color: $btn-bg-color2;
+        width: 48%;
+        border-radius: 10px;
+        padding: 7px 0px;
+        p{
+            color: $white;
+            font-size: 22px;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+        &--red{
+            background-color: red;
+        }
+    }
+    &__chat{
+        border: 1px solid grey;
+        padding: 20px;
+        border-radius: 10px;
+        &-title{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        &-left{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            &-item{
+                border: 1px solid $primary-color;
+                padding: 10px 20px;
+                border-radius: 30px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+            p{
+                margin-bottom: 0;
+            margin-top: 10px;            }
+        }
+        &-right{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
+            &-item{
+                border: 1px solid $primary-color;
+                padding: 10px 20px;
+                background-color: $primary-color;
+                border-radius: 30px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                color: $white;
+            }
+            p{
+                margin-bottom: 0;
+            margin-top: 10px;            }
+        }
+        &-send{
+            border: 1px solid grey;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            margin-top: 50px;
+            input {
+                border: 0;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            &-icon{
+                font-size: 30px;
+                color: $primary-color;
+            }
+            &-p{
+                font-size: 20px;
+                width: 100%;
+                background-color: $white;
+                border: none;
+                &:focus{
+                    outline: 0 none;
+                }
+            }
+        }
+    }
+}

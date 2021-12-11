@@ -1,0 +1,135 @@
+.vehicles-card-area {
+  .single-vehicle-btn {
+    padding: 3px 0;
+    background-color: $btn-bg-color;
+    color: $white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    width: 95%;
+    margin: 10px 0;
+  }
+  .single-vehicle-btn-ver {
+    background-color: $btn-bg-color1;
+  }
+  .single-vehicle-btn-des {
+    background-color: $btn-bg-color2;
+  }
+
+  &__title {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  &__card-section {
+    &-single-card {
+      position: relative;
+      width: 85%;
+      border: 1px solid $primary;
+      border-radius: 10px;
+      &-header {
+        background-color: $primary;
+        border: 1px solid $primary;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 10px 20px;
+        @media (max-width: 575px) {
+          padding: 10px 10px;
+        }
+        &-left {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &-rating {
+            width: 20px;
+          }
+          p {
+            font-size: 20px;
+            font-weight: 600;
+            color: $white;
+            margin-bottom: 0;
+
+            @media (max-width: 575px) {
+              font-size: 15px;
+            }
+          }
+        }
+        &-right {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 0 30px;
+          &-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+          p {
+            font-size: 24px;
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 0;
+            margin-right: 20px;
+          }
+        }
+      }
+      &-icon-block {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        @media (max-width: 991px) {
+          justify-content: flex-start;
+          margin-left: 15px;
+          padding-left: 0;
+          margin-bottom: 15px;
+        }
+        &-name {
+          color: $primary;
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+        &-amount {
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+        &-icon {
+          margin: 0 10px;
+          font-size: 30px;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+.vehicle-next-arrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  background-color: $white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 18px 29px -11px rgb(0 0 0 / 48%);
+}
+
+.vehicle-prev-arrow {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  background-color: $white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 18px 29px -11px rgb(0 0 0 / 48%);
+}

@@ -1,0 +1,63 @@
+.profile-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+  }
+  &__title {
+    font-size: 35px;
+    color: $primary-color;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  &__box{
+      width: 100%;
+      border: 1px solid $primary-color;
+      margin-top: 20px;
+      &-header{
+          background-color: $primary-color;
+          padding: 8px 20px;
+          p{
+              margin-bottom: 0;
+              color: $white;
+          }
+      }
+      &-text{
+          padding: 70px 0px;
+          text-align: center;
+          font-size: 18px;
+      }
+  }
+  &__link{
+      font-size: 30px;
+      font-weight: 900;
+      color: $primary-color;
+      text-align: center;
+      word-wrap: break-word;
+  }
+  &__vehicle-title{
+      font-weight: 900;
+      font-size: 40px;
+      text-align: center;
+      color: $primary-color2;
+      margin-top: 20px;
+  }
+  &__rating{
+      &-title{
+        font-weight: 900;
+        font-size: 45px;
+        text-align: center;
+        @media (max-width: 575px) {
+          font-size: 30px;
+      }
+    }
+    &-text{
+        font-size: 25px;
+        text-align: center;
+
+    }
+  }
+}

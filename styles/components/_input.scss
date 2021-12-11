@@ -1,0 +1,95 @@
+.auth-input-container {
+  width: 100%;
+  position: relative;
+  height: 65px;
+  overflow: hidden;
+  z-index: 2;
+
+  input {
+    width: 100%;
+    height: 100%;
+    color: $title-color;
+    padding-top: 20px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .auth-input-label-container {
+    font-size: 17px;
+    font-weight: bold;
+    color: $text-color4;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid $black;
+    // box-shadow: 0px 10px 10px $text-color;
+    box-shadow: 0px 3px 5px rgba($text-color, 38%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      border-bottom: 3px solid $primary-color;
+      transform: translateX(-100%);
+      transition: all 0.3s ease;
+    }
+  }
+
+  .auth-input-label-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+}
+
+.auth-input-container input:focus+.auth-input-label-container .auth-input-label-name,
+.auth-input-container input:valid+.auth-input-label-container .auth-input-label-name {
+  transform: translateY(-80%);
+  font-size: 14px;
+  left: 0px;
+  color: $primary-color;
+}
+
+.auth-input-container input:focus+.auth-input-label-container::after,
+.auth-input-container input:valid+.auth-input-label-container::after {
+  transform: translateX(0%);
+}
+
+
+.reg-form-input {
+  label {
+    font-size: 22px;
+  }
+
+  input {
+    height: 35px;
+    display: inline-block;
+    background-color: #efece8;
+    border: 0;
+    padding: 0px 12px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+
+    &:focus {
+      border-radius: 6px;
+      outline: none;
+      border: 1px solid $primary-color;
+    }
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+
+  }
+}

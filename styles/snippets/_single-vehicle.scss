@@ -1,0 +1,98 @@
+.single-vehicle-area {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+  .single-vehicle-container {
+    width: 100%;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+  }
+    .img-container {
+      width: 30%;
+      // border: 1px solid $bg-hover;
+      border-radius: 32px;
+      -webkit-border-radius: 32px;
+      -moz-border-radius: 32px;
+      -ms-border-radius: 32px;
+      -o-border-radius: 32px;
+      .image {
+        border-radius: 32px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        -ms-border-radius: 32px;
+        -o-border-radius: 32px;
+      }
+    }
+    .img-container2 {
+      width: 30%;
+      .avatar {
+        border-radius: 80px;
+        -webkit-border-radius: 80px;
+        -moz-border-radius: 80px;
+        -ms-border-radius: 80px;
+        -o-border-radius: 80px;
+      }
+      .image {
+        border-radius: 32px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        -ms-border-radius: 32px;
+        -o-border-radius: 32px;
+      }
+    }
+
+    .single-vehicle-title {
+      p {
+        font-size: 17px;
+        color: $text-color5;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+    }
+    .single-vehicle-value {
+      margin-left: 20px;
+      p {
+        font-size: 17px;
+        color: $text-color4;
+        margin-bottom: 5px;
+      }
+    }
+
+    .single-vehicle-contents {
+      font-size: 17px;
+      color: $primary-color3;
+      &--green {
+        color: $btn-bg-color2;
+      }
+      &--yellow {
+        color: $star-color;
+      }
+    }
+  }
+  .single-vehicle-bottom-text {
+    text-align: end;
+    font-size: 20px;
+    color: $text-color6;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  &:hover {
+    background: $bg-hover;
+  }
+  .single-vehicle-date {
+    margin: 0;
+    font-size: 15px;
+    color: $text-color4;
+    position: absolute;
+    right: 15px;
+    @media (max-width: 575px) {
+      right: 0;
+    }
+  }
+}

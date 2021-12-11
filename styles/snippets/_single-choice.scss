@@ -1,0 +1,31 @@
+.single-choice-container {
+  padding: 14px;
+  border: 1px dotted $text-color4;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  .single-choice-header {
+    margin: 42px 0;
+    font-size: 16px;
+    color: $text-color4;
+    font-weight: 700;
+    span {
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+  }
+  .single-choice-btn {
+    font-size: 25px;
+  }
+  .img-container {
+    img {
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+    }
+  }
+}

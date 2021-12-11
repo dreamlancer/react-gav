@@ -1,0 +1,10 @@
+.section-divider {
+    background-color: $primary-color;
+    height: 1px;
+    width: 550px;
+    margin: 20px auto;
+
+    @include media-breakpoint-down(md) {
+        width: 280px;
+    }
+}

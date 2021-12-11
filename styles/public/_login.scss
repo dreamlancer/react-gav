@@ -1,0 +1,95 @@
+.login-area {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(1, 26, 63, 0.6), rgba(1, 26, 63, 0.6)),
+    url(/images/login-bg.jpg);
+  background-size: cover;
+
+  @media (max-width: 768px) {
+    overflow-y: auto;
+    height: auto;
+    margin: 30px 10px;
+    background: #fff;
+  }
+
+  .login-outer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    padding: 40px 60px;
+    min-width: 580px;
+
+    @media (max-width: 1440px) {
+      padding: 15px 40px;
+    }
+    @media (max-width: 1199px) {
+      min-width: 480px;
+    }
+
+    @media (max-width: 768px) {
+      position: relative;
+      left: 0;
+      right: 0;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    @media (max-width: 575px) {
+      min-width: 400px;
+      padding: 20px 20px;
+      border-radius: 20px;
+    }
+    @media (max-width: 420px) {
+      min-width: 300px;
+      padding: 20px 10px;
+    }
+  }
+
+  .login-form {
+    .login-forget {
+      color: $primary-color;
+      margin-top: 0px;
+      padding-bottom: 3px;
+
+    }
+  }
+
+  .login-btn {
+    border-radius: 20px;
+    font-size: 25px;
+    @media (max-width: 1400px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
+  }
+
+  .login-eye-icon {
+    position: relative;
+    top: -38px;
+    z-index: 1;
+    cursor: pointer;
+    svg {
+      color: $title-color2;
+    }
+  }
+
+  .login-text-left {
+    color: $title-color2;
+  }
+
+  .login-bottom-text {
+    padding-top: 25px;
+    font-size: 24px;
+    color: $title-color2;
+    @media (max-width: 575px) {
+        font-size: 18px;
+    }
+
+    span {
+      color: $primary-color;
+    }
+  }
+}

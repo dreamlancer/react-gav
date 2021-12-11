@@ -1,0 +1,16 @@
+.whygav-area {
+  .gav-para {
+    font-size: 35px;
+    margin-bottom: 50px;
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+  .gav-para-bottom {
+    font-size: 35px;
+    margin-top: 50px;
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+}

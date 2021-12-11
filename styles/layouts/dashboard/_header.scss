@@ -1,0 +1,15 @@
+.dashboard-header {
+
+    .dropdown-menu {
+        @media (max-width: 575px) {
+            position: absolute;
+            right: 0;
+            left: -108%;
+        }
+    }
+
+}
+
+.header-logo {
+    max-width: 70px;
+}

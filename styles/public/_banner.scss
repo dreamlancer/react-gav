@@ -1,0 +1,19 @@
+.banner-area {
+  .available-vehicle {
+    img {
+      border-radius: 60px;
+      border: 1px solid $primary-color;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+  h3 {
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.rating{
+    width: 100%;
+    display: flex;
+    padding: 30px 10px;
+    &__avatar{
+        width: 100px;
+        height:100px;
+        border-radius: 100%;
+    }
+    &__right{
+        margin-left: 30px;
+    }
+    &__title{
+        font-size: 20px;
+    }
+    &__title-2nd{
+        font-size: 20px;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    &__info{
+       margin-left: 5px;
+       color: $text-color4;
+    }
+}

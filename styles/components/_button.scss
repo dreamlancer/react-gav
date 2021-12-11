@@ -1,0 +1,25 @@
+.social-btn {
+    border-radius: 20px;
+    .social-btn-icon {
+        font-size: 30px;
+        @media (max-width: 1400px) {
+            font-size: 25px;
+        }
+        @media (max-width: 1199px) {
+            font-size: 20px;
+        }
+    }
+    .social-btn-title {
+        font-size: 25px;
+        @media (max-width: 1199px) {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.next-btn {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}

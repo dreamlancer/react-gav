@@ -1,0 +1,42 @@
+.custom-radios {
+  padding: 10px 20px;
+  border: 1px solid $title-color2;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(115, 115, 115, 0.692);
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 50%;
+    height: 110%;
+    width: 1px;
+    background-color: $title-color2;
+    transform: rotate(
+20deg
+);
+  }
+}
+
+.custom-radios,
+.custom-radios div {
+  display: inline-block;
+}
+
+.custom-radios input[type=radio] {
+  display: none;
+}
+
+.custom-radios input[type=radio]+label {
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.custom-radios input[type=radio]:checked+label {
+  color: $primary-color;
+  font-weight: 700;
+}
